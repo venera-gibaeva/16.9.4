@@ -5,9 +5,10 @@ class Person:
         self.status = status
 class FullInfo(Person):
     def get_info(self):
-        person1 = (f"{self.name},{self.city},{self.status}")
-        return person1
-client=person1('Иван Петров', "г.Москва",'"наставник"')
+        Person = (f"{self.name}, {self.city}, статус: {self.status}")
+        return Person
+client = FullInfo('Иван Петров', "г.Москва", '"наставник"')
 print(client.get_info())
+
 
 
